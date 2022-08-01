@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+font-family: 'Roboto Serif', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(Images/pang-yuhao-_kd5cxwZOK4-unsplash.jpg);
+    background-size: cover;
+
+}
+
+
+
+.logo{
+    width: 65%;
+    height: 100%;
+}
+
+.nav .logo img{
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    margin-top: 10px;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+.nav ul li {
+    
+    
+    list-style: none;
+    position: relative;
+    
+    /* margin-top: 10px; */
+    margin: 15px;
+    float: right;
+    
+}
+.nav ul li a {
+
+    margin-right: 10px;
+    padding-left: 1px;
+   font-size: 1.71rem; 
+   color: white;
+   text-decoration: none;
+   }
+.nav ul li::after{
+
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: -2px;
+    right:5%;
+    background-color: #ff718e;
+    transition: .3s;
+    
+}
+
+
+.nav ul li:hover::after{
+    
+    width: 100%;
+}
+
+.con-1{
+    position: absolute;
+    bottom: 45%;
+    left: 0%;
+    right: 0%;
+    
+
+    
+}
+.con-1 h1{
+    font-size: 4rem;
+    color: white;
+    /* border: 2px solid red; */
+    text-align: center;
+    font-weight: bolder;
+}
+
+.con-1 p{
+    
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: white;
+}
+
+
+.but-1{
+    text-align: center;
+}
+
+.but-1 button{
+    width: 200px;
+    text-align: center;
+    height: 40px;
+    background: transparent;
+    border: white 2px solid;
+    /* padding-right: 5px; */
+    color: white;
+    outline: none;
+    font-size: 1.5rem;
+    transition: 2s all;
+    cursor: pointer;
+}
+
+.but-1 button:hover{
+    background-color: #ff718e;
+}
+
+@media only screen and (max-width:900px) {
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .logo{
+        width: 100%;
+        display: block;
+        text-align: center;
+        
+    }
+    .nav ul{
+        justify-content: center;
+    }
+
+    html{
+        font-size: 50%;
+    }
+}
+@media only screen and (max-width:500px) {
+
+    html{
+        font-size: 30%;
+    }
+
+    .content-1 button{
+        width: 100px;
+        height: 30px;
+    }
+    
+}
+
+@media only screen and (max-width:350px) {
+
+    html{
+        font-size: 25%;
+    }
+
+    .nav ul li{
+        margin: 0px;
+    }
+    .content-1 button{
+        width: 100px;
+        padding: 0px;
+        height: 20px;
+    }
+
+    .con-1 span{
+
+        display: none;
+    }
+    
+}
+
+    
+.con-2{
+    text-align: center;
+}
+
+.con-2 p{
+    font-size: 1.5rem;
+    margin-top: 5px;
+    line-height: 18px;
+}
+
+.con-2 h1{
+    font-size: 3rem;
+    margin-top: 5px;
+
+}
+
+.con-3{
+
+    margin-top: 20px;
+}
+
+.con-3 h1{
+
+    text-align: center;
+    font-weight:bold;
+
+}
+.con--3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+
+}
+
+.con--3 img{
+    width: 400px;
+    border-radius: 10px;
+    
+    height: 250px;
+}
+
+.p {
+
+    font-size: 1.3rem;
+    width: 500px;
+    line-height: 20px;
+}
+
+.logos{
+    text-align: center;
+    margin-top: 5px;
+    
+}
+
+.logos i{
+    margin: 10px;
+    cursor: pointer;
+    transition: 200ms all;
+    font-size: 1.5rem;
+}
+
+.logos i:hover{
+    font-size: 1.8rem;
+}
+
+.hw{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+@media only screen and (max-width:970px) {
+
+.con--3{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.con--3 img{
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+}
+
+.p {
+    margin-right: 10px;
+    font-size: 1rem;
+    width: 250px;
+}
+
+
+#remove{
+    display: none;
+}
+    
+}
+
+@media only screen and (max-width:280px){
+
+.con--3 img{
+    width: 200px;
+    height: 150px;
+
+}
+
+#remover{
+    display: none;
+}
+
+
+}
+

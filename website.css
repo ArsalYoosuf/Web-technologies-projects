@@ -1,0 +1,633 @@
+*{
+    margin: 0;
+    padding: 0;
+font-family: 'Roboto Serif', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* nav starts */
+
+.nav{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(Images/collegebg.jpg);
+    background-size: cover;
+
+}
+
+
+
+.logo{
+    width: 65%;
+    height: 100%;
+}
+
+.nav .logo img{
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    margin-top: 10px;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+.nav ul li {
+    
+    
+    list-style: none;
+    position: relative;
+    
+    /* margin-top: 10px; */
+    margin: 15px;
+    float: right;
+    
+}
+.nav ul li a {
+
+    margin-right: 10px;
+    padding-left: 1px;
+   font-size: 1.71rem; 
+   color: white;
+   text-decoration: none;
+   }
+.nav ul li::after{
+
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: -2px;
+    right:5%;
+    background-color: #ff718e;
+    transition: .3s;
+    
+}
+
+
+.nav ul li:hover::after{
+    
+    width: 100%;
+}
+
+
+.content-1{
+
+display: flex; 
+flex-direction: column;
+position: absolute;
+top: 40%;
+width: 100%;
+left: 0%;
+align-items: center;
+justify-content: center; 
+
+
+}
+
+.content-1 h1{
+    font-size: 3.3rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.content-1 p{
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    line-height: 2.3rem;
+}
+
+.content-1 button{
+
+    width: 220px;
+    margin-top: 10px;
+    height: 40px;
+    padding-top: 5px;
+    background: transparent;
+    border: 1px solid;
+    color: white;
+    transition: all 1.2s;
+    font-size: 1.4rem;
+}
+
+.content-1 button:hover{
+    background-color: #ff718e;
+    box-shadow:
+  4.3px 1.2px 7.1px rgba(0, 0, 0, 0.53),
+  14.5px 4px 23.9px rgba(0, 0, 0, 0.431),
+  65px 18px 107px rgba(0, 0, 0, 0.297)
+;
+}
+
+@media only screen and (max-width:900px) and (min-width:250px) {
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .logo{
+        width: 100%;
+        display: block;
+        text-align: center;
+        
+    }
+    .nav ul{
+        justify-content: center;
+    }
+
+    html{
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    html{
+        font-size: 30%;
+    }
+
+    .content-1 button{
+        width: 100px;
+        height: 30px;
+    }
+    
+}
+@media only screen and (max-width:350px) {
+
+    html{
+        font-size: 25%;
+    }
+
+    .nav ul li{
+        margin: 0px;
+    }
+    .content-1 button{
+        width: 100px;
+        padding: 0px;
+        height: 20px;
+    }
+    
+}
+
+
+/* Nav ends */
+
+/* Courses starts */
+
+.offer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Courses h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+.Offer{
+    width: 380px;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    background: #fff3ff;
+    align-items: center;
+    flex-direction: column;
+    /* margin-left: 30px; */
+    margin-right: 10px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+    transition: all .5s;
+}
+
+.Offer h2{
+    font-size: 2rem;
+margin-top: 10px;
+}
+
+.Offer p{
+    line-height: 25px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.Offer:hover{
+
+    box-shadow:   0.1px 0.3px 2.2px rgba(0, 0, 0, 0.053),
+    0.1px 0.7px 5.3px rgba(0, 0, 0, 0.077),
+    0.3px 1.4px 10px rgba(0, 0, 0, 0.095),
+    0.4px 2.5px 17.9px rgba(0, 0, 0, 0.113),
+    0.8px 4.6px 33.4px rgba(0, 0, 0, 0.137),
+    2px 11px 80px rgba(0, 0, 0, 0.19);
+}
+
+
+@media only screen and (max-width:400px) {
+    .Offer{
+        width: 60%;
+    }
+   .Offer h2{
+       font-size: 2.2rem;
+   }
+   .Offer p{
+       font-size: 1.2rem;
+       line-height: 10px;
+   }
+
+
+}
+
+/* Courses ends */
+
+/* Campus starts */
+
+.Global_Campus h1{
+    text-align: center;
+    font-size: 3.4rem;
+
+}
+.Global_Campus p{
+    text-align: center;
+    margin-top: 5px;
+    font-size: .9rem;
+
+}
+
+
+.row{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.col-1{
+    /* width: 100%; */
+    flex-basis: 350px;
+    /* max-width: 100%; */
+    height: 100%;
+    justify-self: center;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.col-1 img{
+    width: 80%;
+    height: 400px;
+    display: block;
+    border-radius: 20px;
+}
+.Content{
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.Content h1{
+    
+    font-size: 3rem;
+    opacity: 0;
+    color: white;
+    font-weight: lighter;
+    transition: all .5s;
+}
+
+.Content:hover{
+    background: rgba(227, 0,0,.7);
+}
+.Content:hover  h1{
+    transform: translateY(190px);
+    opacity: 1;
+}
+
+/* Global Campus ends */
+
+/* Facilites starts */
+
+.Fac h1{
+    font-size: 3.3rem;
+    text-align: center;
+}
+.Fac p{
+    font-size: .9rem;
+    text-align: center;
+}
+   
+.Coloumn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.col-2 {
+    flex-basis: 302px;
+    align-items: center;
+    justify-self: center;
+    /* height: 100%; */
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.col-2:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+    box-shadow:   0.1px 0.3px 2.2px rgba(0, 0, 0, 0.053),
+    0.1px 0.7px 5.3px rgba(0, 0, 0, 0.077),
+    0.3px 1.4px 10px rgba(0, 0, 0, 0.095),
+    0.4px 2.5px 17.9px rgba(0, 0, 0, 0.113),
+    0.8px 4.6px 33.4px rgba(0, 0, 0, 0.137),
+    2px 11px 80px rgba(0, 0, 0, 0.19);
+    
+}
+
+
+
+
+
+.col-2 h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 100%;
+    /* margin-left: 150px; */
+}
+.col-2 p{
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    width: 100%;
+
+}
+
+
+#img{
+    height: 290px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    
+}
+
+#img1{
+    width: 100%;
+    height: 290px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+#img2{
+    width: 100%;
+    height: 290px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* Facilities ends */
+
+/* Contact Us starts */
+
+.contactus{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(Images/alfons-morales-YLSwjSy7stw-unsplash.jpg);
+    background-size: cover;
+    height: 150px;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.contactus h1{
+    text-align: center;
+    font-size: 2.7rem;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: white;
+    
+}
+.contactus p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    line-height: 25px;
+    color: white;
+}
+.contactus li{
+    text-align: center;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.contactus li a{
+    
+    color: white;
+    border: 2px solid white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: all .5s;
+}
+
+.contactus li a:hover{
+    background-color: #ff718e;
+    
+}
+
+@media only screen and (max-width:950px) and (min-width:501px) {
+    #spa-1{
+        display: none;
+    }
+    #spa-2{
+        display: none;
+    }
+    
+}
+
+
+
+@media only screen and (max-width:500px) {
+    
+    .contactus h1{
+        padding-top: 34px;
+        margin-bottom: -16px;
+    }
+    .contactus p{
+        margin-top: 33px;
+        padding: 0px 20px;
+        line-height: 15px;
+        
+    }
+    #spa-1{
+        display: none;
+    }
+    #spa-2{
+        display: none;
+    }
+  
+    
+}
+
+/* Contact Us ends */
+
+/* Students starts */
+
+#h{
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px;
+    
+}
+.row_2{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 100%;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.row2 img{
+    width: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.row2{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+   margin: auto;
+   height: 100px;
+   border-radius: 10px;
+    background: #fff3ff;
+    transition: all .5s;
+    flex-basis: 504px;
+    /* width: 40%; */
+}
+.col_3{
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: black;
+}
+.col_3 p{
+    margin-bottom: 5px;
+    line-height: 15px;
+}
+.col_3 h1{
+    margin-bottom: 2px;
+}
+
+#oko{
+    width: 40px;
+    border-radius: 20px;
+    height: 50px;
+}
+
+.row2:hover{
+    
+    box-shadow:   0.1px 0.3px 2.2px rgba(0, 0, 0, 0.053),
+    0.1px 0.7px 5.3px rgba(0, 0, 0, 0.077),
+    0.3px 1.4px 10px rgba(0, 0, 0, 0.095),
+    0.4px 2.5px 17.9px rgba(0, 0, 0, 0.113),
+    0.8px 4.6px 33.4px rgba(0, 0, 0, 0.137),
+    2px 11px 80px rgba(0, 0, 0, 0.19);
+    
+    
+}
+
+
+@media only screen and (max-width:990px) {
+
+    .row2{
+         margin-bottom: 10px;
+       /* margin-left: 10px;
+        margin-right: 10px; */
+        flex-basis: 350px;
+
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Students ends */
+/* footer starts */
+
+.end{
+    margin-top: 40px;
+    background: black;
+}
+.end h1{
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+}
+
+.end_logo{
+margin-top: 5px;
+text-align: center;
+font-size: 1.4rem;
+
+/* color: white; */
+
+}
+.end_logo i{
+    margin-left: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.end_logo i:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
